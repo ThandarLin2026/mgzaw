@@ -1,0 +1,306 @@
+```html
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZZ VPN VIP - Premium Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pyidaungsu:wght@400;700&display=swap');
+        
+        :root {
+            --primary: #3b82f6;
+            --accent: #10b981;
+            --bg-dark: #070b14;
+        }
+
+        body {
+            font-family: 'Pyidaungsu', sans-serif;
+            background-color: var(--bg-dark);
+            color: #e2e8f0;
+            background-image: radial-gradient(circle at top right, rgba(59, 130, 246, 0.1), transparent),
+                              radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.05), transparent);
+        }
+
+        .glass-morphism {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo-ring {
+            position: relative;
+            padding: 4px;
+            background: linear-gradient(45deg, #3b82f6, #10b981);
+            border-radius: 50%;
+            animation: rotate-border 4s linear infinite;
+        }
+
+        @keyframes rotate-border {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+
+        .main-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #fff;
+        }
+
+        .btn-download {
+            background: linear-gradient(90deg, #3b82f6, #2563eb);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6);
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .card-glow-blue:hover { border-color: rgba(59, 130, 246, 0.5); }
+        .card-glow-green:hover { border-color: rgba(16, 185, 129, 0.5); }
+        .card-glow-red:hover { border-color: rgba(239, 68, 68, 0.5); }
+
+        .important-tag {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .no-underline-link {
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header Section -->
+    <header class="pt-8 pb-4 text-center">
+        <div class="flex flex-col items-center">
+            <div class="logo-ring mb-4">
+                <img src="https://raw.githubusercontent.com/ThandarLin2026/mgzaw/refs/heads/main/Image/1776318087134.png" 
+                     alt="MZZ VPN Logo" class="main-logo">
+            </div>
+            <h1 class="text-3xl font-extrabold tracking-tighter text-white">
+                MZZ VPN <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">VIP</span>
+            </h1>
+            
+            <div class="flex gap-4 mt-4">
+                <div class="glass-morphism px-4 py-2 flex flex-col items-center min-w-[100px]">
+                    <span class="text-[10px] uppercase tracking-widest text-gray-400">Server Time</span>
+                    <span id="current-time" class="text-lg font-mono text-blue-400 font-bold">00:00:00</span>
+                </div>
+                <div class="glass-morphism px-4 py-2 flex flex-col items-center min-w-[100px]">
+                    <span class="text-[10px] uppercase tracking-widest text-gray-400">Date</span>
+                    <span id="current-date" class="text-lg font-mono text-emerald-400 font-bold">00/00/00</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-md mx-auto px-5 space-y-6">
+
+        <!-- Download Button -->
+        <div class="relative group">
+            <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+            <a href="https://github.com/ThandarLin2026/mgzaw/releases/download/MZZ.2.0/MZZ.VPN_1.3.mzz.version.apk" 
+               class="relative btn-download w-full py-5 rounded-2xl flex items-center justify-center gap-3 text-xl font-bold text-white no-underline-link">
+                <i class="fas fa-cloud-download-alt animate-bounce"></i>
+                VPN Download ဆွဲရန်
+            </a>
+        </div>
+
+        <!-- Package Section -->
+        <div class="grid grid-cols-1 gap-4">
+            
+            <!-- TRUE Card -->
+            <div class="glass-morphism p-5 card-glow-red transition-all duration-300">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="p-1 bg-white rounded-full">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBjYn2mMb-icoXyxxJfdDkFE5_vCVyrG1N8kqmR7xmMA&s=10" 
+                             alt="TRUE Move" class="w-12 h-12 rounded-full object-cover">
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-red-500">TRUE Packages</h2>
+                        <p class="text-[10px] text-gray-500 uppercase">High Speed</p>
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="bg-slate-800/40 p-3 rounded-xl flex justify-between items-center border border-white/5">
+                        <div>
+                            <p class="text-xs text-gray-400">TRUE VDO ZOOM</p>
+                            <p class="text-yellow-500 text-[11px] mt-1">( စမတ်ခ ၈၅ ฿ )</p>
+                        </div>
+                        <a href="tel:*900*8234#" class="flex items-center gap-2 text-lg font-bold text-red-500 no-underline-link">
+                            <span>*900*8234#</span>
+                            <i class="fas fa-phone-alt text-sm"></i>
+                        </a>
+                    </div>
+                    <div class="bg-slate-800/40 p-3 rounded-xl flex justify-between items-center border border-white/5">
+                        <div>
+                            <p class="text-xs text-gray-400">TRUE TWITTER</p>
+                            <p class="text-yellow-500 text-[11px] mt-1">( စမတ်ခ ၅၃ ฿ )</p>
+                        </div>
+                        <a href="tel:*900*3509*17407106#" class="flex items-center gap-2 text-md font-bold text-red-500 no-underline-link">
+                            <span class="text-sm">*900*3509*17407106#</span>
+                            <i class="fas fa-phone-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DTAC Card -->
+            <div class="glass-morphism p-5 card-glow-blue transition-all duration-300">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="p-1 bg-white rounded-full">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5khNjYFjYLfnVKH87UkJTMVmM7IAB4B2_YVtDd1T19Q&s=10" 
+                             alt="DTAC" class="w-12 h-12 rounded-full object-cover">
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-blue-400">DTAC Packages</h2>
+                        <p class="text-[10px] text-gray-500 uppercase">Fast Connection</p>
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="bg-slate-800/40 p-3 rounded-xl flex justify-between items-center border border-white/5">
+                        <div>
+                            <p class="text-xs text-gray-400">DTAC JAIDEE</p>
+                            <p class="text-yellow-500 text-[11px] mt-1">( စမတ်ခ ၁၅ ฿ )</p>
+                        </div>
+                        <a href="tel:*117*15#" class="flex items-center gap-2 text-lg font-bold text-blue-400 no-underline-link">
+                            <span>*117*15#</span>
+                            <i class="fas fa-phone-alt text-sm"></i>
+                        </a>
+                    </div>
+                    <div class="bg-slate-800/40 p-3 rounded-xl border border-white/5">
+                        <p class="text-sm font-bold text-gray-200">DTAC GAMING</p>
+                        <p class="text-[11px] text-emerald-500 mt-1"><i class="fas fa-info-circle mr-1"></i>DTAC APP ထဲမှာစမတ်ပါ</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AIS Card -->
+            <div class="glass-morphism p-5 card-glow-green transition-all duration-300">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="p-1 bg-white rounded-full">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPWDw9OgQesh9b5HoA1qa6fcpEd_l-JmB5NqQ7EYEyQ&s=10" 
+                             alt="AIS" class="w-12 h-12 rounded-full object-cover">
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-emerald-400">AIS Packages</h2>
+                        <p class="text-[10px] text-gray-500 uppercase">Stable Network</p>
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="bg-slate-800/40 p-3 rounded-xl flex justify-between items-center border border-white/5">
+                        <div>
+                            <p class="text-xs text-gray-400">AIS 64 KBPS</p>
+                            <p class="text-yellow-500 text-[11px] mt-1">( စမတ်ခ ၂၉ ฿ )</p>
+                        </div>
+                        <a href="tel:*777*7067#" class="flex items-center gap-2 text-lg font-bold text-emerald-400 no-underline-link">
+                            <span>*777*7067#</span>
+                            <i class="fas fa-phone-alt text-sm"></i>
+                        </a>
+                    </div>
+                    <div class="bg-slate-800/40 p-3 rounded-xl flex justify-between items-center border border-white/5">
+                        <div>
+                            <p class="text-xs text-gray-400">AIS 128 KBPS</p>
+                            <p class="text-yellow-500 text-[11px] mt-1">( စမတ်ခ ၃၄ ฿ )</p>
+                        </div>
+                        <a href="tel:*777*7068#" class="flex items-center gap-2 text-lg font-bold text-emerald-400 no-underline-link">
+                            <span>*777*7068#</span>
+                            <i class="fas fa-phone-alt text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How to Use Section -->
+        <section class="glass-morphism p-6 space-y-5">
+            <h3 class="text-xl font-bold flex items-center gap-2 text-white">
+                <i class="fas fa-book-open text-blue-500"></i>
+                အသုံးပြုနည်း အဆင့်ဆင့်
+            </h3>
+
+            <div class="space-y-4">
+                <div class="flex gap-4">
+                    <div class="step-number">1</div>
+                    <p class="text-gray-300 text-sm">ဆော့ဝဲကို အပေါ်က ဒေါင်းလုတ်ခလုတ်မှတစ်ဆင့် ဒေါင်းယူပါ။</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="step-number">2</div>
+                    <p class="text-gray-300 text-sm">ဆော့ဝဲထဲရှိ ချိတ်တဲ့ခလုတ်ကိုနှိပ်ပါ။ <span class="text-blue-400 font-bold">Token ID</span> ကိုတွေ့ရပါမယ်။</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="step-number">3</div>
+                    <p class="text-gray-300 text-sm">Copy ခလုတ်ကိုနှိပ်ပြီး <span class="text-blue-400 font-bold">( Token ID )</span> ကို Copy ယူပါ။</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="step-number">4</div>
+                    <p class="text-gray-300 text-sm">Admin ဆီ <span class="text-emerald-400 font-bold">Token ID</span> ကို ပို့ပေးပါ။</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="step-number">5</div>
+                    <p class="text-gray-300 text-sm">Admin က ဖြတ်ပိုင်းတခုပို့ပေးရင်ရပါပြီ VPN ကိုထွက်ပြီးပြန်ဝင်ပါ။</p>
+                </div>
+            </div>
+
+            <!-- Important Note -->
+            <div class="important-tag p-4 rounded-xl mt-4">
+                <h4 class="text-red-500 font-bold flex items-center gap-2 text-sm mb-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    အရေးကြီးသော အချက်
+                </h4>
+                <p class="text-gray-400 text-xs leading-relaxed">
+                    အင်တာနက်ခဏရှိရပါမယ်။
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 opacity-40 text-[10px] tracking-widest uppercase">
+        <p>&copy; 2024 MZZ VPN VIP • Secure Access</p>
+    </footer>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+            document.getElementById('current-time').textContent = now.toLocaleTimeString('en-GB', timeOptions);
+
+            const day = String(now.getDate()).padStart(2, '0');
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const year = String(now.getFullYear()).substring(2);
+            document.getElementById('current-date').textContent = `${day}/${month}/${year}`;
+        }
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+</body>
+</html>
+
+```
